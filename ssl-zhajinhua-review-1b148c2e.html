@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于炸金花 · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e293b;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2.5rem 1.25rem 4rem;
+        }
+
+        /* hero 区域 */
+        .hero {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.25rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero .subhead {
+            font-size: 1.05rem;
+            color: #64748b;
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 0 0.5rem;
+        }
+
+        /* 分隔装饰 */
+        .divider {
+            width: 40px;
+            height: 3px;
+            background: #d4d4d8;
+            margin: 1.8rem auto 2rem;
+            border-radius: 4px;
+        }
+
+        /* 文本与卡片区域 */
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+            border-left: 4px solid #94a3b8;
+            padding-left: 0.85rem;
+        }
+
+        .card-soft {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.6rem 1.8rem;
+            margin-bottom: 1.8rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e9edf2;
+        }
+
+        .card-soft p {
+            margin-bottom: 0.9rem;
+            font-size: 0.98rem;
+        }
+
+        .card-soft p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .highlight-item {
+            background: #f1f5f9;
+            border-radius: 32px;
+            padding: 0.5rem 1.1rem;
+            font-size: 0.9rem;
+            color: #1e293b;
+            border: 1px solid #e2e8f0;
+            line-height: 1.4;
+        }
+
+        .scene-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .scene-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            font-size: 0.96rem;
+            color: #1e293b;
+        }
+
+        .scene-list li::before {
+            content: "▹";
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e9edf2;
+            padding: 0.9rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+            color: #0f172a;
+        }
+
+        .faq-a {
+            font-size: 0.92rem;
+            color: #475569;
+        }
+
+        .link-sentence {
+            background: #f8fafc;
+            padding: 0.6rem 1.2rem;
+            border-radius: 40px;
+            display: inline-block;
+            border: 1px solid #e2e8f0;
+            font-size: 0.95rem;
+            margin: 0.4rem 0 0.2rem;
+        }
+
+        .link-sentence a {
+            color: #1e293b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #cbd5e1;
+            font-weight: 500;
+            transition: text-decoration-color 0.2s;
+        }
+
+        .link-sentence a:hover {
+            text-decoration-color: #64748b;
+        }
+
+        .footnote {
+            margin-top: 2.8rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #64748b;
+            text-align: center;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 550px) {
+            .page {
+                padding: 1.8rem 1rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .card-soft {
+                padding: 1.2rem 1.2rem;
+            }
+
+            .highlight-grid {
+                gap: 0.6rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- hero -->
+        <div class="hero">
+            <h1>炸金花 · 玩法与指引</h1>
+            <div class="subhead">一款经典三张扑克比大小的游戏，这里聚合了规则说明、术语整理与实用参考。</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 摘要：这是什么样的网站 -->
+        <div class="card-soft">
+            <div class="section-title">一句话摘要</div>
+            <p>
+                <strong>ssl-zhajinhua.com</strong> 是一个围绕「炸金花」主题整理的内容站点，面向想快速了解游戏规则、常见牌型、比牌逻辑以及相关背景的玩家。站内信息以介绍与说明为主，不涉及真实货币对局或充值渠道。
+            </p>
+        </div>
+
+        <!-- 特点与亮点 -->
+        <div class="card-soft">
+            <div class="section-title">特点与亮点</div>
+            <div class="highlight-grid">
+                <span class="highlight-item">📖 规则与牌型速览</span>
+                <span class="highlight-item">📊 术语参考及概率简表</span>
+                <span class="highlight-item">🧩 比牌流程示意</span>
+                <span class="highlight-item">📌 无诱导 / 无注册门槛</span>
+            </div>
+            <p style="margin-top: 1.2rem;">
+                内容以知识性为切入点，适合初次接触或想梳理细节的玩家。页面结构清晰，不堆砌广告，也不收集个人数据。
+            </p>
+        </div>
+
+        <!-- 使用场景建议 -->
+        <div class="card-soft">
+            <div class="section-title">适合哪些场景</div>
+            <ul class="scene-list">
+                <li>朋友局之前快速确认牌型大小顺序</li>
+                <li>想了解「金花」「顺金」「豹子」等叫法到底对应什么组合</li>
+                <li>对照规则厘清235与豹子的特殊关系</li>
+                <li>纯好奇，想看看炸金花到底有多少种变化</li>
+            </ul>
+            <p style="margin-top: 0.9rem; font-size: 0.94rem; color: #475569;">
+                无论你是老手还是刚听说的新手，站点内容都保持中立、平实，只陈述客观规则。
+            </p>
+        </div>
+
+        <!-- 可信但克制的访问说明，自然嵌入链接 -->
+        <div class="card-soft" style="background: #fbfdff;">
+            <div class="section-title">访问说明</div>
+            <p>
+                如果你想直接了解 <a href="https://ssl-zhajinhua.com" style="text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #94a3b8; font-weight: 500; color: #1e293b;">炸金花</a> 的详细规则与牌型列表，可以前往该站点翻阅。页面加载轻量，无需登录，内容以文字说明为主，辅以少量示意表格。
+            </p>
+            <p style="margin-top: 0.7rem;">
+                需要留意的是：该网站仅提供信息参考，不包含任何在线对局、充值、提现或真人匹配功能。请理性看待，纯粹把它当作一个规则备忘页就好。
+            </p>
+            <!-- 额外自然句嵌入链接 -->
+            <div class="link-sentence">
+                🔗 参考入口 · <a href="https://ssl-zhajinhua.com">炸金花</a>
+            </div>
+        </div>
+
+        <!-- FAQ 摘要 -->
+        <div class="card-soft">
+            <div class="section-title">常见问题摘要</div>
+            <div class="faq-item">
+                <div class="faq-q">⚡ 网站上能直接玩吗？</div>
+                <div class="faq-a">不能。该站点为纯信息页面，不提供在线游戏或模拟器。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">📋 规则是最新的吗？</div>
+                <div class="faq-a">保持常见通用版本（基于豹子>顺金>金花>顺子>对子>散牌，部分特殊规则如235可管豹子也有提及）。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">🔐 需要注册或下载吗？</div>
+                <div class="faq-a">完全不需要，打开即读，无任何个人资料收集。</div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footnote">
+            仅作知识介绍 · 不涉及赌博或现金交易<br>
+            请合理使用，保持娱乐心态
+        </div>
+    </div>
+</body>
+</html>
